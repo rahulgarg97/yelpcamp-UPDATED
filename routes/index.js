@@ -68,7 +68,7 @@ router.get('/checkout', isLoggedIn, (req, res) => {
 router.post('/pay', isLoggedIn, async (req, res) => {
     const { paymentMethodId, items, currency } = req.body;
 
-    const amount = 2000;
+    const amount = 100;
   
     try {
       // Create new PaymentIntent with a PaymentMethod ID from the client.
