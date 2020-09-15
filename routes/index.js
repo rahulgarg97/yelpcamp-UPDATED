@@ -61,7 +61,7 @@ router.get('/checkout', isLoggedIn, (req, res) => {
         req.flash('success', 'Your account is already paid');
         return res.redirect('/campgrounds');
     }
-    res.render('checkout', { amount: 20 });
+    res.render('checkout', { amount: 1 });
 });
 
 // POST pay
